@@ -39,11 +39,11 @@ def _read_csv_from_url(url: str) -> list[dict]:
     r.raise_for_status()
     text = r.content.decode("utf-8", errors="ignore")
     lines = [ln for ln in text.splitlines() if ln.strip()]
-    # 找到包含“date/日期”的表头行
+    
     header_idx = 0
     for i, ln in enumerate(lines[:20]):
         low = ln.lower()
-        if "date" in low or "日期" in low:
+        if "date" in low or "data" in low:
             header_idx = i
             break
     effective = "\n".join(lines[header_idx:])
@@ -57,7 +57,7 @@ def _parse_date_any(row: dict) -> Optional[datetime]:
         if not k:
             continue
         kl = k.lower()
-        if "date" in kl or "日期" in kl or "day" in kl:
+        if "date" in kl or "data" in kl or "day" in kl:
             s = str(v).strip()
             try:
                 return datetime.fromisoformat(s)
@@ -96,7 +96,7 @@ def _fallback_open_meteo(year: int, month: int) -> List[WeatherDay]:
     r = requests.get(url, timeout=REQUEST_TIMEOUT)
     data = r.json()
 
-    # 防御：如果没有 daily 字段，打印返回体并返回空列表（避免 KeyError）
+   
     if "daily" not in data:
         print("[fallback] Open-Meteo did not return daily data:", data)
         return []
