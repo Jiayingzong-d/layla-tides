@@ -18,6 +18,8 @@ Particle colors vary depending on the day’s mean temperature.
 Right-hand panel shows summary (number of sunny/rainy/cloudy days, average/max/min temperature).
 Panel can be collapsed/expanded by clicking the title area.
 
+While the course examples mainly use pandas and matplotlib for visualization, this project uses Pygame to create an interactive particle system. This approach demonstrates that data visualization can go beyond static charts and be represented as dynamic, interactive art.
+
 ⸻
 
 Data Source
@@ -46,11 +48,11 @@ python weather_galaxy.py
 File Structure
 
 .
-├── data_fetch.py         # Fetches & parses weather data (API/CSV)
-├── weather_galaxy.py     # Main visualization script (Pygame)
-├── requirements.txt      # Dependencies (pygame, requests, pandas)
-├── .gitignore            # Ignore cache/venv/system files
-└── README.md             # Project documentation
+data_fetch.py         # Fetches & parses weather data (API/CSV)
+weather_galaxy.py     # Main visualization script (Pygame)
+requirements.txt      # Dependencies (pygame, requests, pandas)
+.gitignore            # Ignore cache/venv/system files
+README.md             # Project documentation
 
 ⸻
 
