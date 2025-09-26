@@ -1,5 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+# Multiple date formats supported for robustness (different CSV / API may use different styles)
 """
 Robust data_fetch.py
 1) Try Hong Kong Observatory (HKO) Open Data CSVs (CLMTEMP + CLMRN).

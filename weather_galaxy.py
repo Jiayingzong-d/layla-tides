@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+# Just enjoy the code animation
+
 """
 Hong Kong daily weather (Aug 2024) as an interactive particle system.
 - Pure black background

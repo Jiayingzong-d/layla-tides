@@ -1,8 +1,7 @@
-Hong Kong August 2024 Weather Visualization
+Hong Kong Weather Visualization for August 2024
 
-An interactive data art visualization of Hong Kong’s August 2024 daily weather, implemented in Python + Pygame.
-The project fetches real meteorological data (via API or CSV), processes it, and renders a particle system where each particle represents a day in August.
-
+I created an interactive data art visualization project showing Hong Kong's daily weather for August 2024, using Python and Pygame.
+The project takes real-world weather data (via an API or CSV file), processes it, and renders a particle system, where each particle represents a day in August.
 ⸻
 
 Features
