@@ -61,3 +61,8 @@ Example Output
  • Interactive highlights with tooltips
  • Collapsible statistics panel with summary of weather
  
+ reference:
+ ## References / Data Sources
+- Hong Kong Observatory (HKO) Open Data. Retrieved from: [https://www.hko.gov.hk/en/opendata/index.htm](https://www.hko.gov.hk/en/opendata/index.htm)  
+- Open-Meteo API. Retrieved from: [https://open-meteo.com/](https://open-meteo.com/)  
+- Offline backup: CSV file (`data/hko_2024_08.csv`) manually exported from HKO website for reproducibility.
